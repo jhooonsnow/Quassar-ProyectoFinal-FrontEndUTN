@@ -13,3 +13,5 @@ El carrito de compras permite agregar y eliminar productos, calcular el total de
 Sector de Noticias
 
 Quassar incluye un sector de noticias que se actualiza mediante la integración con la API Latest News.
+
+Aclaración: La página se ve bien desde el LiveServer, pero al hacer el deploy tanto en github como en webhost tiende a tener de pocos a muchos errores.
