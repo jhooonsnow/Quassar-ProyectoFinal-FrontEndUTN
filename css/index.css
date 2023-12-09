@@ -1,0 +1,411 @@
+/* navbar */
+.navegacion{
+    background-color: black;
+}
+.logo{
+    width: 98px;
+    height: 98px;
+    padding: 0%;
+}
+.items{
+    background-color: #4c535d;
+    width: 2.280in;
+    height: 0.250in;
+    font-size: 10pt;
+}
+.login{
+    text-decoration: none;
+    color: white;
+    font-size: 6pt;
+}
+.login img{
+    width: 0.243in;
+    height: 0.243in;
+}
+.p-login{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+/* Fin código navbar */
+
+/* CARRITO */
+.logo-carrito{
+    position: relative;
+}
+.logo-carrito button{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+.logo-carrito:hover{
+    cursor: pointer;
+}
+.logo-carrito img{
+    height: 0.243in;
+    width: auto;
+}
+
+.contador-carrito{
+    position: absolute;
+    top: 52%;
+    right: 13px;
+    background-color: #f0f0f0;
+    color: black;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+.container-carta-productos{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    background-color: #f0f0f0;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.20);
+    z-index: 3;
+}
+
+.carta-productos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.info-carts{
+    display: flex;
+    flex: 0.8;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+}
+.titulo-producto-carrito{
+    font-weight: 500;
+}
+.precio-producto-carrito{
+    font-weight: 700;
+}
+
+.total-carrito{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+.icon-close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* BODY */
+.fondo{
+    background-color: #f2f3f5;
+}
+.novedades{
+    width: 1.807in;
+    height: 2.657in;
+    background-color: white;
+    border-radius: 14px;
+}
+.novedades a{
+    color: #4c535d;
+    text-decoration: none;
+}
+.novedades img{
+    border-radius: 15px;
+    width: 1.57in;
+    height: 1.57in;
+}
+.novedades h3{
+    color: #49bcab;
+}
+.novedades:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.20);
+}
+.pt5{
+    font-size: 5pt;
+}
+.pt6{
+    font-size: 6pt;
+}
+.pt7{
+    font-size: 7pt;
+}
+.pt10{
+    font-size: 10pt;
+}
+.pt12{
+    font-size: 12pt;
+}
+.pt18{
+    font-size: 18pt;
+}
+.comprar{
+    background: none;
+    border: none;
+    background-color: #49bcab;
+    color: white;
+    width: 0.850in;
+    height: 0.215in;
+    border-radius: 4px;
+}
+.datos{
+    width: 2.262in;
+    height: 0.650in;
+    background-color: white;
+    border-radius: 10px;
+}
+.datos img{
+    width: 0.492in;
+    height: 0.492in;
+    border-radius: 100%;
+}
+.pie1{
+    background-color: #3a414a;
+}
+.pie2{
+    background-color: black;
+    color: white;
+}
+.pie1 ul{
+    list-style: none;
+    padding: 0px;
+}
+.pie1 a{
+    text-decoration: none;
+    color: white;
+}
+.redes{
+    background-color: #49bcab;
+}
+.redes div{
+    width: 0.396in;
+    height: 0.396in;
+    background-color: #ced4db;
+    border-radius: 100%;
+    margin-top: 0.05in;
+    margin-bottom: 0.05in;
+    margin-left: 0.3in;
+}
+.redes img{
+    width: 0.236in;
+    height: 0.236in;
+}
+/* Titulo con líneas */
+.title-container {
+    text-align: center;
+    position: relative;
+}
+
+.title-text {
+    display: inline-block;
+    background-color: #f0f0f0; 
+    padding: 0 20px; 
+    position: relative;
+    z-index: 2; 
+}
+.line {
+    position: absolute;
+    top: 50%; 
+    width: 50%; 
+    border-top: 2px solid black; 
+    z-index: 1; 
+}
+.line.left {
+    left: 0;
+}
+.line.right {
+    right: 0;
+}
+/* Fin título con líneas */
+
+/* Sobre Nosotros */
+
+.foto-sobre-nosotros{
+    height: 5.300in;
+    width: auto;
+}
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.about-us p{
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .about-us {
+      flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
+    }
+
+.h-about-us {
+    width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
+    margin-bottom: 16px; /* Añade margen inferior para separar los elementos en pantallas más pequeñas */
+    }
+}
+.u-parrafo{
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+/* Fin sobre nosotros */
+
+/* Contacto */
+.contacto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    .contacto {
+        flex-direction: column;
+    }
+
+.h-contacto {
+    width: 100%; 
+    margin-bottom: 16px;
+    }
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5.500in;
+    gap: 20px;
+}
+.f-datos{
+    height: 0.430in;
+    border: none;
+    border-radius: 7px;
+}
+.mensaje{
+    height: 1.400in;
+    text-align: start;
+    align-items: baseline;
+}
+.send-btn{
+    border: none;
+    background: none;
+    background-color: #49bcab;
+    width: 2.000in;
+    height: 0.400in;
+    color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.iniciar-sesion-btn{
+    border: none;
+    background: none;
+    background-color: #49bcab;
+    width: 3.600in;
+    height: 0.400in;
+    color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.sombrita:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+.datos-empresa{
+    display: flex;
+    flex-direction: column;
+    left: 30px;
+    gap: 30px;
+}
+.c-l-datos-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.275in;
+    height: 0.275in;
+    border-radius: 50%;
+    background-color: #ced4db;
+    margin-left: 30px;
+}
+.l-datos-empresa{
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+}
+.container-d-individuales{
+    display: flex;
+    align-items: center;
+}
+.links-contacto{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    width: 2.100in;
+}
+.mapa{
+    margin-left: 15px;
+    width: 3.200in;
+    height: 2.500in;
+}
+/* noticias */
+#noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.noticia-card {
+    width: 23%; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.noticia-card:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para dispositivos móviles (hasta 600px de ancho) */
+@media screen and (max-width: 600px) {
+    #noticias-container {
+        justify-content: center; /* Centra las tarjetas en dispositivos móviles */
+        gap: 10px;
+    }
+
+    .noticia-card {
+        width: 48%; /* Muestra solo dos tarjetas por fila en dispositivos móviles */
+    }
+}
+
+.ini-reg-crear-cuenta{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    gap: 1px;
+}
+.ini-reg-crear-cuenta a{
+    color: black;
+}
+.botones{
+    margin-bottom: 70px;
+}

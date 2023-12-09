@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navegacion">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/quassar-logos_white.png" class="logo" alt="Logotipo Quassar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav container-fluid justify-content-around">
+                        <li class="nav-item d-flex items m-2 justify-content-center align-items-center">
+                            <a class="nav-link text-white text-center" href="/pages/remeras.html">Remeras</a>
+                        </li>
+                        <li class="nav-item d-flex items m-2 justify-content-center align-items-center">
+                            <a class="nav-link text-white text-center" href="/pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item d-flex items m-2 justify-content-center align-items-center">
+                            <a class="nav-link text-white text-center" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item d-flex items m-2 justify-content-center align-items-center">
+                            <a class="nav-link text-white text-center" href="/pages/moda-news.html">Noticias</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="p-login">
+                            <a href="/pages/iniciar-sesion.html" class="login d-flex">
+                                <img src="/Assets/Iconos/Otros/icono-login.png" alt="Icono login">
+                                <div>
+                                    <p class="m-0">¡Hola! Inicia sesión</p>
+                                    <p>O podés registrarte</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carrito">
+                    <div class="logo-carrito">
+                        <img src="/Assets/Iconos/Otros/carrito-blanco.png" alt="Carrito de Compras">
+                    </div>
+                    <div class="contador-carrito d-flex justify-content-center align-items-center">
+                        <span id="contador-productos" class="pt10">0</span>
+                    </div>
+                    <div class="container-carta-productos hidden-cart">
+                        <div class="row-product">
+                            <div class="carta-productos">
+                                <div class="info-carts">
+                                    <span class="cantidad-producto-carrito pt10">0</span>
+                                    <p class="titulo-producto-carrito pt10">0</p>
+                                    <span class="precio-producto-carrito pt7">0</span>
+                                </div>
+                                <div class="cierre">
+                                    <span class="material-symbols-outlined icon-close">close</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-carrito">
+                            <h3 class="pt10"></h3>
+                            <span class="total-pagar pt10"></span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <main class="fondo">
+        <div class="remeras"></div>
+        <div class="title-container p-5">
+            <div class="line left"></div>
+            <div class="title-text">
+                <h1 class="pt18">Registro</h1>
+            </div>
+            <div class="line right"></div>
+        </div>
+        <div class="contacto">
+            <form class="h-contacto container formulario" id="registroForm" onsubmit="guardarDatos()">
+                <!-- nombre -->
+                <div class="container">
+                    <label for="nombre" class="d-block pt10">Nombre y Apellido: </label>
+                    <input type="text" class="d-block container f-datos" id="nombre-contacto" placeholder="Albert Einstein" required>
+                </div>
+                <!-- email -->
+                <div class="container">
+                    <label for="email" class="d-block pt10">Email: </label>
+                    <input type="email" class="d-block f-datos container" id="email" placeholder="albertitogeniox@example.com" required>
+                </div>
+                <!-- telefono -->
+                <div class="container">
+                    <label for="phone" class="d-block pt10">Teléfono: </label>
+                    <input type="number" class="d-block container f-datos" id="phone" placeholder="3141592653" required>
+                </div>
+                <!-- contraseña -->
+                <div class="container">
+                    <label for="password" class="d-block pt10">Contraseña: </label>
+                    <input type="password" class="d-block container f-datos" id="password" required>
+                </div>
+                <!-- boton -->
+                <div class="botones">
+                    <div class="send-btn-container">
+                        <button type="submit" class="send-btn sombrita">Crear Cuenta</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="redes d-flex justify-content-center">
+            <a href="https://www.instagram.com">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="/assets/iconos/footer/instagram_1077042.png" alt="Icono Instagram">
+                </div>
+            </a>
+            <a href="https://www.facebook.com">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="/assets/iconos/footer/facebook_1051360.png" alt="Icono Facebook">
+                </div>
+            </a>
+            <a href="https://www.tiktok.com">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="/assets/iconos/footer/tik-tok_3046120.png" alt="Icono TikTok">
+                </div>
+            </a>
+        </div>
+        <div class="d-flex pie1 justify-content-around pt-1 pb-1">
+            <div class="">
+                <h2 class="pt7 text-white">Categorías</h2>
+                <ul>
+                    <li><a href="index.html" class="pt7">Inicio</a></li>
+                    <li><a href="" class="pt7">Sobre Nosotros</a></li>
+                    <li><a href="" class="pt7">Remeras</a></li>
+                    <li><a href="" class="pt7">Iniciar Sesión</a></li>
+                    <li><a href="" class="pt7">Registrate</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="pt7 text-white">Contactanos</h2>
+                <ul>
+                    <li><a href="index.html" class="pt7">+54 9 3765 03-1218</a></li>
+                    <li><a href="" class="pt7">Quassar-arg@gmail.com</a></li>
+                    <li><a href="" class="pt7" width: 300px>Estado de Israel 971, Posadas, <br>Misiones, Argentina</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pie2 d-flex p-1 justify-content-around align-items-center">
+            <p class="pt6">Copyright Quassar Remeras - 2023. Todos los derechos reservados</p>
+            <p class="pt6">Creado por: Jhon Bryan Melo - Proyecto Final - Curso Front End</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- <script src="/js/index.js"></script> -->
+    <script src="/js/registro-usuario.js"></script>
+</body>
+
+</html>
